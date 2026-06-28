@@ -1,0 +1,137 @@
+/*
+Part B
+Problem 1
+*/
+SELECT b.title, b.subtitle, b.edition, b.place
+FROM book b
+INNER JOIN published_by pb
+ON b.bookdescid = pb.bookdescid
+
+WHERE LOWER(b.place) LIKE '%oxford%'
+AND LOWER(role) LIKE 'publisher';
+
+/* 
+Problem 2
+*/
+SELECT b.bookdescid, COUNT(bc.bookdescid) AS "number of copies"
+FROM book b
+INNER JOIN book_copy bc
+ON b.bookdescid = bc.bookdescid
+GROUP BY bc.bookdescid
+ORDER BY "number of copies" DESC;
+
+/* 
+Problem 3_A
+*/
+SELECT DISTINCT b.bookdescid, b.title, b.subtitle, b.edition, b.place
+FROM book b
+JOIN book_copy bc
+ON b.bookdescid = bc.bookid
+LEFT JOIN borrow_copy brc
+ON bc.bookid = brc.bookid 
+WHERE brc.transactionID IS NULL;
+
+/* 
+Problem 3_B
+*/
+SELECT b.bookdescid, b.title, b.subtitle, b.edition, b.place
+FROM book b
+WHERE b.bookdescid IN (
+    SELECT bc.bookid 
+    FROM book_copy bc
+        WHERE bc.bookid NOT IN(
+        SELECT brc.bookid
+        FROM borrow_copy brc)
+);
+
+/* 
+Problem 4 
+*/
+SELECT a.firstname, a.middlename, a.lastname, COUNT(w.bookdescid) AS 'booknumb'
+FROM author a
+INNER JOIN written_by w
+ON a.authorid = w.authorid
+WHERE w.role = 'Author'
+GROUP BY a.authorid
+HAVING booknumb >1 ;
+
+/* 
+Problem 5 
+*/
+SELECT b.title, DATE(br.returndate) AS 'returnDate', 
+     DATE(br.duedate) AS 'dueDate', 
+     julianday(br.returndate) - julianday(br.duedate) AS 'daysDelay'
+FROM borrow br
+JOIN borrow_copy brc
+ON br.transactionid = brc.transactionid
+JOIN book_copy bc
+ON bc.bookid = brc.bookid
+LEFT JOIN book b
+ON bc.bookid = b.bookdescid
+WHERE julianday(br.returndate) > julianday(br.duedate);
+
+
+/* 
+Problem 6 
+*/
+SELECT p.publisherfullname
+FROM publisher p
+LEFT JOIN published_by pb 
+ON p.publisherID = pb.publisherID 
+AND pb.role = 'Editor'
+WHERE pb.publisherID IS NULL
+ORDER BY p.publisherfullname;
+
+/* 
+Problem 7 
+*/
+SELECT a.firstname|| ' ' || a.lastname AS "author",
+       b.title AS "bookTitle",
+       s.subjecttype AS "bookSubject",
+       b.year AS "publishedYear"
+FROM author a
+INNER JOIN written_by wb 
+ON a.authorID = wb.authorID
+INNER JOIN book b 
+ON wb.bookdescID = b.bookdescID
+INNER JOIN subject s 
+ON b.subjectID = s.subjectID
+WHERE s.subjecttype = 'Artificial Intelligence';
+
+/* 
+Problem 8 ISYS1055
+*/
+SELECT b.title AS "bookTitle",
+       p.firstname || ' ' || p.lastname AS 'borrowerName',
+       DATE(br.borrowdate) AS Date_of_Borrow
+FROM book b
+JOIN borrow_copy brc
+ON b.bookdescid = brc.bookid
+JOIN borrow br
+ON brc.transactionid = br.transactionid
+JOIN person p
+ON br.personid = p.personid
+WHERE p.personid IN (SELECT p.personid
+                     FROM book b
+                     JOIN borrow_copy brc
+                     ON b.bookdescid = brc.bookid
+                     JOIN borrow br
+                     ON brc.transactionid = br.transactionid
+                     JOIN person p
+                     ON br.personid = p.personid
+                     WHERE LOWER(b.title) LIKE 'computer science')
+AND LOWER(b.title) != 'computer science';
+
+/* 
+Problem 8 ISYS3412
+*/
+SELECT b.bookdescid, b.title, b.year,
+       COUNT(brc.transactionid) AS "timesBorrowed"
+FROM book b
+LEFT JOIN book_copy bc
+ON bc.bookid = b.bookdescid
+LEFT JOIN borrow_copy brc
+ON brc.bookid = bc.bookid
+GROUP BY b.bookdescid
+HAVING COUNT(brc.transactionid) > 0
+ORDER BY "timesBorrowed" DESC;

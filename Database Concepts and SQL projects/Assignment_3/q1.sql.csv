@@ -1,0 +1,228 @@
+Country,Vaccine Type
+Argentina,CanSino
+Argentina,Moderna
+Argentina,Oxford/AstraZeneca
+Argentina,Pfizer/BioNTech
+Argentina,Sinopharm/Beijing
+Argentina,Sputnik Light
+Argentina,Sputnik V
+Austria,Johnson&Johnson
+Austria,Moderna
+Austria,Novavax
+Austria,Oxford/AstraZeneca
+Austria,Pfizer/BioNTech
+Austria,Sanofi/GSK
+Austria,Valneva
+Belgium,Johnson&Johnson
+Belgium,Moderna
+Belgium,Novavax
+Belgium,Oxford/AstraZeneca
+Belgium,Pfizer/BioNTech
+Bulgaria,Johnson&Johnson
+Bulgaria,Moderna
+Bulgaria,Oxford/AstraZeneca
+Bulgaria,Pfizer/BioNTech
+Canada,Johnson&Johnson
+Canada,Medicago
+Canada,Moderna
+Canada,Novavax
+Canada,Oxford/AstraZeneca
+Canada,Pfizer/BioNTech
+Switzerland,Johnson&Johnson
+Switzerland,Moderna
+Switzerland,Novavax
+Switzerland,Pfizer/BioNTech
+Chile,CanSino
+Chile,Moderna
+Chile,Oxford/AstraZeneca
+Chile,Pfizer/BioNTech
+Chile,Sinovac
+Cyprus,Johnson&Johnson
+Cyprus,Moderna
+Cyprus,Novavax
+Cyprus,Oxford/AstraZeneca
+Cyprus,Pfizer/BioNTech
+Czechia,Covaxin
+Czechia,Johnson&Johnson
+Czechia,Moderna
+Czechia,Novavax
+Czechia,Oxford/AstraZeneca
+Czechia,Pfizer/BioNTech
+Czechia,Sinopharm/Beijing
+Czechia,Sinovac
+Czechia,Sputnik V
+Czechia,Valneva
+Germany,Johnson&Johnson
+Germany,Moderna
+Germany,Novavax
+Germany,Oxford/AstraZeneca
+Germany,Pfizer/BioNTech
+Germany,Valneva
+Denmark,Johnson&Johnson
+Denmark,Moderna
+Denmark,Oxford/AstraZeneca
+Denmark,Pfizer/BioNTech
+Ecuador,CanSino
+Ecuador,Oxford/AstraZeneca
+Ecuador,Pfizer/BioNTech
+Ecuador,Sinovac
+Spain,Johnson&Johnson
+Spain,Moderna
+Spain,Oxford/AstraZeneca
+Spain,Pfizer/BioNTech
+Estonia,Johnson&Johnson
+Estonia,Moderna
+Estonia,Novavax
+Estonia,Oxford/AstraZeneca
+Estonia,Pfizer/BioNTech
+Finland,Johnson&Johnson
+Finland,Moderna
+Finland,Novavax
+Finland,Oxford/AstraZeneca
+Finland,Pfizer/BioNTech
+Finland,Valneva
+France,Johnson&Johnson
+France,Moderna
+France,Novavax
+France,Oxford/AstraZeneca
+France,Pfizer/BioNTech
+France,Sanofi/GSK
+Hong Kong,Pfizer/BioNTech
+Hong Kong,Sinovac
+Croatia,Johnson&Johnson
+Croatia,Moderna
+Croatia,Novavax
+Croatia,Oxford/AstraZeneca
+Croatia,Pfizer/BioNTech
+Hungary,Johnson&Johnson
+Hungary,Moderna
+Hungary,Oxford/AstraZeneca
+Hungary,Pfizer/BioNTech
+Hungary,Sinopharm/Beijing
+Hungary,Sputnik V
+Ireland,Johnson&Johnson
+Ireland,Moderna
+Ireland,Novavax
+Ireland,Oxford/AstraZeneca
+Ireland,Pfizer/BioNTech
+Iceland,Johnson&Johnson
+Iceland,Moderna
+Iceland,Oxford/AstraZeneca
+Iceland,Pfizer/BioNTech
+Italy,Johnson&Johnson
+Italy,Moderna
+Italy,Novavax
+Italy,Oxford/AstraZeneca
+Italy,Pfizer/BioNTech
+Italy,Sanofi/GSK
+Japan,Moderna
+Japan,Novavax
+Japan,Oxford/AstraZeneca
+Japan,Pfizer/BioNTech
+South Korea,Johnson&Johnson
+South Korea,Moderna
+South Korea,Novavax
+South Korea,Oxford/AstraZeneca
+South Korea,Pfizer/BioNTech
+South Korea,SKYCovione
+Liechtenstein,Johnson&Johnson
+Liechtenstein,Moderna
+Liechtenstein,Novavax
+Liechtenstein,Pfizer/BioNTech
+Lithuania,Johnson&Johnson
+Lithuania,Moderna
+Lithuania,Oxford/AstraZeneca
+Lithuania,Pfizer/BioNTech
+Luxembourg,Johnson&Johnson
+Luxembourg,Moderna
+Luxembourg,Novavax
+Luxembourg,Oxford/AstraZeneca
+Luxembourg,Pfizer/BioNTech
+Latvia,Johnson&Johnson
+Latvia,Moderna
+Latvia,Novavax
+Latvia,Oxford/AstraZeneca
+Latvia,Pfizer/BioNTech
+Latvia,Sinopharm/Beijing
+Latvia,Sinovac
+Malta,Johnson&Johnson
+Malta,Moderna
+Malta,Oxford/AstraZeneca
+Malta,Pfizer/BioNTech
+Netherlands,Johnson&Johnson
+Netherlands,Moderna
+Netherlands,Novavax
+Netherlands,Oxford/AstraZeneca
+Netherlands,Pfizer/BioNTech
+Norway,Johnson&Johnson
+Norway,Moderna
+Norway,Oxford/AstraZeneca
+Norway,Pfizer/BioNTech
+Nepal,Johnson&Johnson
+Nepal,Moderna
+Nepal,Oxford/AstraZeneca
+Nepal,Pfizer/BioNTech
+Nepal,Sinopharm/Beijing
+European Union,Covaxin
+European Union,Johnson&Johnson
+European Union,Moderna
+European Union,Novavax
+European Union,Oxford/AstraZeneca
+European Union,Pfizer/BioNTech
+European Union,Sanofi/GSK
+European Union,Sinopharm/Beijing
+European Union,Sinovac
+European Union,Sputnik V
+European Union,Valneva
+Peru,Moderna
+Peru,Oxford/AstraZeneca
+Peru,Pfizer/BioNTech
+Peru,Sinopharm/Beijing
+Poland,Johnson&Johnson
+Poland,Moderna
+Poland,Novavax
+Poland,Oxford/AstraZeneca
+Poland,Pfizer/BioNTech
+Portugal,Covaxin
+Portugal,Johnson&Johnson
+Portugal,Moderna
+Portugal,Novavax
+Portugal,Oxford/AstraZeneca
+Portugal,Pfizer/BioNTech
+Portugal,Sanofi/GSK
+Portugal,Sinopharm/Beijing
+Portugal,Sinovac
+Romania,Johnson&Johnson
+Romania,Moderna
+Romania,Oxford/AstraZeneca
+Romania,Pfizer/BioNTech
+Slovakia,Johnson&Johnson
+Slovakia,Moderna
+Slovakia,Novavax
+Slovakia,Oxford/AstraZeneca
+Slovakia,Pfizer/BioNTech
+Slovakia,Sputnik V
+Slovenia,Johnson&Johnson
+Slovenia,Moderna
+Slovenia,Novavax
+Slovenia,Oxford/AstraZeneca
+Slovenia,Pfizer/BioNTech
+Slovenia,Sanofi/GSK
+Sweden,Moderna
+Sweden,Novavax
+Sweden,Oxford/AstraZeneca
+Sweden,Pfizer/BioNTech
+Ukraine,Johnson&Johnson
+Ukraine,Moderna
+Ukraine,Oxford/AstraZeneca
+Ukraine,Pfizer/BioNTech
+Ukraine,Sinovac
+Uruguay,Oxford/AstraZeneca
+Uruguay,Pfizer/BioNTech
+Uruguay,Sinovac
+United States,Johnson&Johnson
+United States,Moderna
+United States,Novavax
+United States,Pfizer/BioNTech
+South Africa,Johnson&Johnson
+South Africa,Pfizer/BioNTech

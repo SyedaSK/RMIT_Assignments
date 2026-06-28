@@ -1,0 +1,82 @@
+﻿source_website,source_name
+https://www.government.aw,Government of Aruba
+https://covid19.who.int/,World Health Organization
+https://ais.paho.org/imm/IM_DosisAdmin-Vacunacion.asp,World Health Organization
+https://covidstats.com.ar/,Ministry of Health
+https://www.ecdc.europa.eu/en/publications-data/data-covid-19-vaccination-eu-eea,European CDC
+https://koronavirusinfo.az,Government of Azerbaijan
+https://epistat.wiv-isp.be/covid/,Sciensano
+https://www.rivm.nl/sites/default/files/2021-09/COVID-19_website_rapport_eilanden_engels_35_20210902_1409.pdf,World Health Organization
+http://103.247.238.92/webportal/pages/covid19-vaccination-update.php,Directorate General of Health Services
+https://coronavirus.bg/bg/statistika,Ministry of Health
+https://github.com/dquintani/vacunacion/,Ministry of Health via https://www.boligrafica.com/
+https://coronavirusbra1.github.io,State governments via coronavirusbra1.github.io
+https://covid19tracker.ca/vaccinationtracker.html,Official data from provinces via covid19tracker.ca
+https://opendata.swiss/en/dataset/covid-19-schweiz?detGeo=CH,Federal Office of Public Health
+https://github.com/MinCiencia/Datos-COVID19,"Ministry of Health, via Ministry of Science GitHub repository"
+https://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_13141/202302/t20230211_263697.html,National Health Commission
+https://stats.pacificdata.org/vis?tm=covid&pg=0&df[ds]=SPC2&df[id]=DF_COVID_VACCINATION&df[ag]=SPC&df[vs]=1.0,SPC Public Health Division
+https://salud.msp.gob.cu/actualizacion-de-la-vacunacion-en-el-marco-de-los-estudios-de-los-candidatos-vacunales-cubanos-y-la-intervencion-sanitaria/,Ministry of Health
+https://www.moh.gov.cy/moh/moh.nsf/All/0EFA027144C9E54AC22586BE0032B2F5,Ministry of Health
+https://onemocneni-aktualne.mzcr.cz/covid-19,Ministry of Health
+https://impfdashboard.de/,Robert Koch Institut
+https://vacunate.gob.do,Ministry of Public Health
+https://www.sanidad.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/documentos/Informe_Comunicacion_20230526.ods,Ministry of Health
+https://opendata.digilugu.ee,National Health Board
+https://sampo.thl.fi/pivot/prod/en/vaccreg/cov19cov/fact_cov19cov,Finnish Institute for Health and Welfare
+https://www.facebook.com/FalkIandsGov/posts/4401230323224594,Government of the Falkland Islands
+https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/,Public Health France
+https://corona.fo/api,Government of the Faeroe Islands
+https://coronavirus.data.gov.uk/details/vaccinations,Government of the United Kingdom
+https://vaccines.ncdc.ge/vaccinationprocess/,National Center for Disease Control and Public Health
+https://covid19.gov.gg/guidance/vaccine/stats,Government of Guernsey
+https://twitter.com/GibraltarGov/status/1517138573614477315,Government of Gibraltar
+https://www.data.gov.gr/datasets/mdg_emvolio/,Ministry of Health
+https://corona.nun.gl/en/,Government of Greenland
+https://data.gov.hk/en-data/dataset/hk-fhb-fhbcovid19-vaccination-rates-over-time-by-age,Food and Health Bureau
+https://www.koronavirus.hr,Ministry of Health
+https://koronavirus.gov.hu//cikkek/6-millio-421-ezer-beoltott-4-397-az-uj-fertozott-es-elhunyt-56-beteg,Government of Hungary
+https://covid19.gov.im/general-information/covid-19-vaccination-statistics/,Isle of Man Government
+https://dashboard.cowin.gov.in/,Government of India
+https://covid19ireland-geohive.hub.arcgis.com/,Heath Service Executive
+https://www.covid.is/tolulegar-upplysingar-boluefni,Directorate of Health
+https://datadashboard.health.gov.il/COVID-19/general,Government of Israel
+https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-latest.csv,Extraordinary commissioner for the Covid-19 emergency
+https://vaccination.moh.gov.jm,Ministry of Health
+https://www.gov.je/Datasets/ListOpenData?ListName=COVID19Weekly&clean=true,Government of Jersey
+https://www.kantei.go.jp/jp/headline/kansensho/vaccine.html,Prime Minister's Office
+https://www.coronavirus2020.kz/,Government of Kazakhstan
+https://vc.emed.gov.kg/,Ministry of Health
+https://ncv.kdca.go.kr/,Korea Centers for Disease Control and Prevention
+https://www.covid19.gov.la/index.php,World Health Organization
+https://opendata.swiss/en/dataset/covid-19-schweiz?detGeo=FL,Federal Office of Public Health
+https://experience.arcgis.com/experience/cab84dcfe0464c2a8050a78f817924ca/page/page_3/,Ministry of Health
+https://data.gov.lv/dati/eng/dataset/covid19-vakcinacijas,National Health Service
+https://www.ssm.gov.mo/apps1/COVID19Case/en.aspx,Government of Macao
+https://en.gouv.mc/Policy-Practice/Social-Affairs-and-Health/News/Minister-of-State-visits-those-working-to-combat-COVID,National Council
+https://github.com/COVID19-Malta/COVID19-Cases,COVID-19 Malta Public Health Response Team
+https://www.covidodgovor.me/,Government of Montenegro
+https://ikon.mn/,Ministry of Health via ikon.mn
+https://github.com/MoH-Malaysia/covid19-public,Government of Malaysia
+https://github.com/folkehelseinstituttet/surveillance_data,Norwegian Institute of Public Health
+https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/covid-19-vaccine-data,Ministry of Health
+https://asi.saglik.gov.ct.tr/,Ministry of Health
+https://msh.rks-gov.net/sq/statistikat-covid-19/,Ministry of Health
+https://www.datosabiertos.gob.pe/dataset/vacunacion,Ministerio de Salud via github.com/jmcastagnetto/covid-19-peru-vacunas
+https://www.gov.pl/web/szczepimysie/raport-szczepien-przeciwko-covid-19,Ministry of Health
+https://gogov.ru/articles/covid-v-stats,Official data from local governments via gogov.ru
+https://data.gov.sg/dataset/covid-19-vaccination,Government of Singapore
+https://www.sainthelena.gov.sh/2021/news/preliminary-data-from-the-covid-19-vaccination-programme/,Government of Saint Helena
+https://covid19.gob.sv/,Ministry of Health
+https://vakcinacija.gov.rs/,Government of Serbia
+https://laatjevaccineren.sr/,Government of Suriname
+https://github.com/Institut-Zdravotnych-Analyz/covid19-data/raw/main/Vaccination/OpenData_Slovakia_Vaccination_AgeGroup_District.csv,Ministry of Health
+https://covid-19.sledilnik.org/sl/stats,National Institute of Public Health via covid-19.sledilnik.org
+https://www.fohm.se/folkhalsorapportering-statistik/statistikdatabaser-och-visualisering/vaccinationsstatistik/statistik-for-vaccination-mot-covid-19/,Public Health Agency of Sweden
+https://ddc.moph.go.th/covid19-dashboard/,Government of Thailand
+https://services3.arcgis.com/x3I4DqUw3b3MfTwQ/arcgis/rest/services/service_7a519502598f492a9094fd0ad503cf80/FeatureServer/0/query,Ministry of Health
+https://covid19asi.saglik.gov.tr/,COVID-19 Vaccine Information Platform
+https://www.cdc.gov.tw/Category/Page/9jFXNbCe-sFK9EImRRi2Og,Taiwan Centers for Disease Control
+https://monitor.uruguaysevacuna.gub.uy/,Ministry of Health via vacuna.uy
+https://data.cdc.gov/Vaccinations/COVID-19-Vaccination-Trends-in-the-United-States-N/rh2h-3yt2,Centers for Disease Control and Prevention
+https://www.arcgis.com/home/webmap/viewer.html?url=https://services9.arcgis.com/DnERH4rcjw7NU6lv/ArcGIS/rest/services/Vaccine_Distribution_Program/FeatureServer&source=sd,Ministry of Health
