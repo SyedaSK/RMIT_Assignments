@@ -1,0 +1,59 @@
+---
+title: "Untitled"
+author: "Syeda"
+date: "2024-06-15"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r, echo = False}
+library(readxl)
+library(ggplot2)
+library(plotly)
+
+
+data <- read_excel("gender_paygap.xlsx")
+
+
+
+data$dates <- as.Date(data$dates)
+data$state <- as.factor(data$state)
+
+date_min <- as.Date("2012-05-01")
+date_max <- as.Date("2024-01-31")
+
+p1 <- ggplot(data, aes(x=dates, y=gap, color=state))+
+  geom_line()+
+  scale_x_date(date_breaks = "year",
+               date_labels = "%b %y",
+               limits = c(date_min, date_max))+
+  scale_y_continuous(limits = c(0,50))+
+  theme(panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        plot.background = element_blank()) 
+```
+
+## Slide with Plot
+
+```{r pressure}
+ggplotly(p1)   
+```
+

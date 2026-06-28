@@ -1,0 +1,63 @@
+---
+title: "Gender Pay Gap in Australia"
+author: "Syeda"
+date: "2024-06-15"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## National Overview
+```{r, echo=TRUE}
+library(readxl)
+library(ggplot2)
+library(plotly)
+
+
+data <- read_excel("gender_paygap.xlsx")
+
+
+
+data$dates <- as.Date(data$dates)
+data$state <- as.factor(data$state)
+
+date_min <- as.Date("2012-05-01")
+date_max <- as.Date("2024-01-31")
+
+p1 <- ggplot(data, aes(x=dates, y=gap, color=state))+
+  geom_line()+
+  scale_x_date(date_breaks = "year",
+               date_labels = "%b %y",
+               limits = c(date_min, date_max))+
+  scale_y_continuous(limits = c(0,50))+
+  theme(panel.grid.major = element_blank(),  # Remove major grid lines
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        plot.background = element_blank()) 
+
+ggplotly(p1)   
+
+```
+
+
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+

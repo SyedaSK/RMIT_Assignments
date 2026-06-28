@@ -1,0 +1,13 @@
+name: Gender_PayGap
+title: Gender_PayGap
+username: vn8be7-syeda-khan
+account: vn8be7-syeda-khan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12188294
+bundleId: 8747428
+url: https://vn8be7-syeda-khan.shinyapps.io/Gender_PayGap/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: s1.html|s1.Rmd

@@ -1,0 +1,39 @@
+industry,weekly_earnings,gender
+Mining,"3,049.30",Male
+Manufacturing,"1,743.80",Male
+"Electricity, gas, water & waste services","2,266.20",Male
+Construction,"1,795.80",Male
+Wholesale trade,"1,811.50",Male
+Retail trade,"1,503.10",Male
+Accommodation & food services,"1,454.30",Male
+"Transport, postal & warehousing","1,855.50",Male
+Information media & telecommunications,"2,536.20",Male
+Financial & insurance services,"2,378.70",Male
+"Rental, hiring & real estate services","1,895.70",Male
+"Professional, scientific & technical services","2,468.60",Male
+Administrative & support services,"1,827.70",Male
+Public administration & safety,"2,056.10",Male
+Education & training,"2,113.70",Male
+Health care & social assistance,"2,188.90",Male
+Arts & recreation services,"1,820.10",Male
+Other services,"1,486.90",Male
+Total all industries,"1,982.80",Male
+Mining,"2,568.90",Female
+Manufacturing,"1,523.60",Female
+"Electricity, gas, water & waste services","2,023.40",Female
+Construction,"1,674.10",Female
+Wholesale trade,"1,581.60",Female
+Retail trade,"1,346.10",Female
+Accommodation & food services,"1,315.40",Female
+"Transport, postal & warehousing","1,714.20",Female
+Information media & telecommunications,"2,126.80",Female
+Financial & insurance services,"1,962.30",Female
+"Rental, hiring & real estate services","1,616.60",Female
+"Professional, scientific & technical services","1,889.20",Female
+Administrative & support services,"1,506.30",Female
+Public administration & safety,"1,948.60",Female
+Education & training,"1,932.80",Female
+Health care & social assistance,"1,737.80",Female
+Arts & recreation services,"1,537.20",Female
+Other services,"1,375.10",Female
+Total all industries,"1,744.80",Female

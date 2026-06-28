@@ -1,0 +1,95 @@
+rm(list=ls()) # Clean R's memory!
+library(TSA)
+
+# Set working directory not to repeat the path to the folder while loading data
+# setwd("/Users/haydardemirhan/Documents/MATH1318_TimeSeries/tasks/Task1") 
+
+#--- Task 1 --- 
+MelbourneAnnualRainfallRaw <- read.csv("MelbourneAnnualRainfall.csv", header=FALSE)
+rownames(MelbourneAnnualRainfallRaw) <- seq(from=1995, to=2016)
+class(MelbourneAnnualRainfallRaw)
+plot(MelbourneAnnualRainfallRaw,type='o',ylab='Amount of annual rainfall')
+
+# Convert to the TS object!
+MelbourneAnnualRainfall <- ts(as.vector(MelbourneAnnualRainfallRaw), 
+                              start=1995, end=2016) 
+MelbourneAnnualRainfall
+
+MelbourneAnnualRainfall <- NA
+MelbourneAnnualRainfall <- ts(as.vector(MelbourneAnnualRainfallRaw$V1), # Read correct column, which is 'V1' here.
+                              start=1995) 
+
+MelbourneAnnualRainfall
+
+plot(MelbourneAnnualRainfall,type='o',ylab='Amount of annual rainfall', 
+     main = " Time series plot of annual rainfall in Melbourne.")
+
+#--- Task 2 ---
+mu = 0 
+sigma = 1 #0.1 #sqrt{Var}
+n = 48
+
+curve(dnorm(x, mean = mu, sd = sigma), from = -4, to = 4) # Visualise the pdf of normal distribution for discussions
+
+y = rnorm(n, mu, sigma) # Generate random data from the given normal distribution
+class(y)
+plot(y)
+# # Convert to the TS object!
+plot(ts(y))
+
+plot.ts(y , lty = 2 , type='o',ylab='Normal distributed process') # without converting the generated data to a time series object
+
+plot(ts(y) , type='o', ylab='Normal distributed process', 
+     main = "Time series plot of randomly generated data from normal distribution.") # converting the generated data to a time series object 
+
+#--- Task 3 ---
+
+nu = 12
+n = 48
+
+curve(dchisq(x, df = nu), from = 0, to = 40) # Visualise the pdf of chi-square distribution for discussions
+
+y = rchisq(n, nu) # Generate random data from the given chi-square distribution
+plot(ts(y) , type='o',ylab='Chi-squre distributed process',
+     main = "Time series plot of randomly generated data from chi-square distribution.") # converting the generated data to a time series object 
+
+#--- Task 4 ---
+
+MelbourneMonthlyRainfallRaw = read.csv("MelbourneMonthlyRainfall.csv",header = FALSE)
+MelbourneMonthlyRainfallRaw
+rownames(MelbourneMonthlyRainfallRaw) <- seq(from=1995, to=2016)
+colnames(MelbourneMonthlyRainfallRaw) <- c("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec")
+summary(MelbourneMonthlyRainfallRaw)
+class(MelbourneMonthlyRainfallRaw)
+
+# Deal with 2 NAs, I simply use mean!
+apply(is.na(MelbourneMonthlyRainfallRaw), 2, which) # Find the NAs in the data.frame
+
+MelbourneMonthlyRainfallRaw$aug[8] <- mean(MelbourneMonthlyRainfallRaw$aug, na.rm = TRUE) # na.rm = TRUE is to skip NAs for the calculations of mean.
+MelbourneMonthlyRainfallRaw$nov[12] <- mean(MelbourneMonthlyRainfallRaw$nov, na.rm = TRUE) 
+summary(MelbourneMonthlyRainfallRaw)
+
+MelbourneMonthlyRainfall <- ts(as.vector(as.matrix( MelbourneMonthlyRainfallRaw )), 
+                               start=c(1995,1), end=c(2016,12), frequency=12)
+MelbourneMonthlyRainfall # Check if data is read in correct order!
+# Now the data read into R in an incorrect order!!! Check with the original CSV file!
+
+MelbourneMonthlyRainfall <- ts(as.vector(as.matrix( t( MelbourneMonthlyRainfallRaw ) )), 
+                               start=c(1995,1), end=c(2016,12), frequency=12)
+MelbourneMonthlyRainfall
+# We should take the transpose of the matrix with t() to put it in the correct order!!!
+
+class(MelbourneMonthlyRainfall)
+
+# --- The following line is to open a new graphics window in Windows ---
+win.graph(width=4.875, height=2.5,pointsize=8)
+# --- The following line is to open a new graphics window in Mac OS ---
+x11()
+
+plot(MelbourneMonthlyRainfall,ylab='Amount of monthly rainfall', main = "Time series plot of monthly rainfall in Melbourne.")
+points(y=MelbourneMonthlyRainfall,
+       x=time(MelbourneMonthlyRainfall),
+       pch=as.vector(season(MelbourneMonthlyRainfall)))
+
+a=season(MelbourneMonthlyRainfall)
+a

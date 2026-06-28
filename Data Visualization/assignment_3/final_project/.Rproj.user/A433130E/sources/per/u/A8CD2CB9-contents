@@ -1,0 +1,19 @@
+install.packages("TSA")
+library (TSA)
+
+data(larain)
+win.graph()
+plot(larain, ylab='Inches', xlab='Year', type='o', main ="Time series 
+     plot of annual rainfall amounts recorded in LA")
+
+
+melrain<-read.csv("MelbourneAnnualRainfall.csv", header = FALSE)
+head(melrain)
+class(melrain)
+
+ts(melrain)
+win.graph(pointsize =8, width = 8, height = 5)
+p1<-plot.ts(melrain)
+
+generated <- rnorm(48)
+plot(ts(generated))
